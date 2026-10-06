@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "description": "Crop, companion and pollinator reference data for EcoFarm Advisor. Emission and agronomy values are indicative and should be validated by local agricultural experts.",
+    "crop_base_emission_kg_co2e_per_ha": "Typical crop-specific field emissions per season (e.g. methane from flooded rice, residue and soil N2O), excluding fertilizer, irrigation energy and machinery fuel which are calculated separately."
+  },
+  "crops": {
+    "Wheat": {
+      "base_emission": 350,
+      "companions": [
+        {"name": "Mustard", "benefit": "Attracts beneficial insects and acts as a trap crop for aphids."},
+        {"name": "Chickpea", "benefit": "Fixes nitrogen and reduces fertilizer demand."},
+        {"name": "Lentil", "benefit": "Legume that improves soil nitrogen when rotated or intercropped."}
+      ],
+      "pollinators": [
+        {"plant": "Mustard", "attracts": "Honeybees, hoverflies", "bloom": "Winter"},
+        {"plant": "Coriander", "attracts": "Hoverflies, parasitic wasps", "bloom": "Winter-Spring"},
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"}
+      ]
+    },
+    "Rice": {
+      "base_emission": 2200,
+      "companions": [
+        {"name": "Azolla (in paddy)", "benefit": "Fixes nitrogen and can cut urea needs."},
+        {"name": "Sesbania (green manure, bund)", "benefit": "Adds organic nitrogen to the soil."},
+        {"name": "Pulses on bunds (cowpea/pigeon pea)", "benefit": "Uses bund space, fixes nitrogen and attracts predators."}
+      ],
+      "pollinators": [
+        {"plant": "Sunflower (bunds)", "attracts": "Honeybees, bumblebees", "bloom": "Summer"},
+        {"plant": "Marigold (bunds)", "attracts": "Bees, butterflies", "bloom": "Year-round"},
+        {"plant": "Sesbania", "attracts": "Carpenter bees", "bloom": "Monsoon"}
+      ]
+    },
+    "Maize": {
+      "base_emission": 450,
+      "companions": [
+        {"name": "Cowpea", "benefit": "Fixes nitrogen and suppresses weeds."},
+        {"name": "Pumpkin / Squash", "benefit": "Ground cover keeps soil moist and cuts weeds."},
+        {"name": "Beans", "benefit": "Nitrogen fixation; climbs maize stalks."}
+      ],
+      "pollinators": [
+        {"plant": "Sunflower", "attracts": "Honeybees, native bees", "bloom": "Summer"},
+        {"plant": "Cosmos", "attracts": "Butterflies, hoverflies", "bloom": "Monsoon-Autumn"},
+        {"plant": "Zinnia", "attracts": "Butterflies, bees", "bloom": "Summer-Monsoon"}
+      ]
+    },
+    "Tomato": {
+      "base_emission": 400,
+      "companions": [
+        {"name": "Basil", "benefit": "Repels whiteflies and thrips; may improve flavour."},
+        {"name": "Marigold", "benefit": "Helps deter nematodes and attracts pollinators."},
+        {"name": "Onion / Garlic", "benefit": "Strong scent deters many pests."}
+      ],
+      "pollinators": [
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"},
+        {"plant": "Borage", "attracts": "Bumblebees, honeybees", "bloom": "Spring-Summer"},
+        {"plant": "Basil (flowering)", "attracts": "Bees", "bloom": "Summer"}
+      ]
+    },
+    "Potato": {
+      "base_emission": 500,
+      "companions": [
+        {"name": "Beans", "benefit": "Nitrogen fixation; may deter Colorado beetle."},
+        {"name": "Marigold", "benefit": "Suppresses nematodes."},
+        {"name": "Coriander", "benefit": "Attracts beneficial predators of aphids."}
+      ],
+      "pollinators": [
+        {"plant": "Coriander", "attracts": "Hoverflies, parasitic wasps", "bloom": "Winter"},
+        {"plant": "Alyssum", "attracts": "Hoverflies, small bees", "bloom": "Winter-Spring"},
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"}
+      ]
+    },
+    "Cotton": {
+      "base_emission": 600,
+      "companions": [
+        {"name": "Cowpea", "benefit": "Trap crop and nitrogen fixer."},
+        {"name": "Okra", "benefit": "Border/trap crop for bollworm."},
+        {"name": "Marigold", "benefit": "Trap crop and pollinator attractant."}
+      ],
+      "pollinators": [
+        {"plant": "Sunflower", "attracts": "Honeybees, native bees", "bloom": "Summer"},
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"},
+        {"plant": "Cowpea", "attracts": "Native bees", "bloom": "Summer-Monsoon"}
+      ]
+    },
+    "Sugarcane": {
+      "base_emission": 700,
+      "companions": [
+        {"name": "Soybean / Greengram", "benefit": "Short-duration legume intercrop fixes nitrogen."},
+        {"name": "Onion / Garlic", "benefit": "Intercrop that adds income and can reduce some pests."},
+        {"name": "Potato (early)", "benefit": "Early-season intercrop using inter-row space."}
+      ],
+      "pollinators": [
+        {"plant": "Sunflower", "attracts": "Honeybees", "bloom": "Summer"},
+        {"plant": "Greengram", "attracts": "Native bees", "bloom": "Summer"},
+        {"plant": "Cosmos", "attracts": "Butterflies, hoverflies", "bloom": "Monsoon-Autumn"}
+      ]
+    },
+    "Mustard": {
+      "base_emission": 300,
+      "companions": [
+        {"name": "Wheat", "benefit": "Classic intercrop; mustard lures aphids away."},
+        {"name": "Chickpea", "benefit": "Nitrogen fixation and spreads risk."},
+        {"name": "Lentil", "benefit": "Legume partner using different root depth."}
+      ],
+      "pollinators": [
+        {"plant": "Mustard (self)", "attracts": "Honeybees, hoverflies", "bloom": "Winter"},
+        {"plant": "Coriander", "attracts": "Hoverflies, parasitic wasps", "bloom": "Winter-Spring"},
+        {"plant": "Fennel", "attracts": "Hoverflies, lacewings", "bloom": "Winter-Spring"}
+      ]
+    },
+    "Chickpea": {
+      "base_emission": 200,
+      "companions": [
+        {"name": "Mustard", "benefit": "Border crop; attracts natural enemies of pod borer."},
+        {"name": "Coriander", "benefit": "Intercrop that brings beneficial insects."},
+        {"name": "Wheat", "benefit": "Rotation/intercrop partner that uses fixed nitrogen."}
+      ],
+      "pollinators": [
+        {"plant": "Coriander", "attracts": "Hoverflies, small wasps", "bloom": "Winter"},
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"},
+        {"plant": "Mustard", "attracts": "Honeybees", "bloom": "Winter"}
+      ]
+    },
+    "Onion": {
+      "base_emission": 350,
+      "companions": [
+        {"name": "Carrot", "benefit": "Onion scent deters carrot fly; carrot deters onion fly."},
+        {"name": "Tomato", "benefit": "Alternate rows reduce pest pressure."},
+        {"name": "Chamomile", "benefit": "Said to improve vigour and attracts predators."}
+      ],
+      "pollinators": [
+        {"plant": "Chamomile", "attracts": "Hoverflies, small bees", "bloom": "Winter-Spring"},
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"},
+        {"plant": "Coriander", "attracts": "Hoverflies, parasitic wasps", "bloom": "Winter"}
+      ]
+    },
+    "Brinjal (Eggplant)": {
+      "base_emission": 400,
+      "companions": [
+        {"name": "Coriander", "benefit": "Attracts predators of fruit and shoot borer."},
+        {"name": "Marigold", "benefit": "Nematode suppression and pollinator attractant."},
+        {"name": "Beans", "benefit": "Nitrogen fixation and ground cover."}
+      ],
+      "pollinators": [
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"},
+        {"plant": "Cosmos", "attracts": "Butterflies, hoverflies", "bloom": "Monsoon-Autumn"},
+        {"plant": "Borage", "attracts": "Bumblebees", "bloom": "Spring-Summer"}
+      ]
+    },
+    "Soybean": {
+      "base_emission": 250,
+      "companions": [
+        {"name": "Maize", "benefit": "Strip intercrop improves land use and light capture."},
+        {"name": "Sugarcane", "benefit": "Short-duration intercrop in cane inter-rows."},
+        {"name": "Sunflower", "benefit": "Border crop that draws pollinators."}
+      ],
+      "pollinators": [
+        {"plant": "Sunflower", "attracts": "Honeybees, native bees", "bloom": "Summer"},
+        {"plant": "Cosmos", "attracts": "Butterflies, hoverflies", "bloom": "Monsoon-Autumn"},
+        {"plant": "Marigold", "attracts": "Bees, butterflies", "bloom": "Year-round"}
+      ]
+    }
+  }
+}
